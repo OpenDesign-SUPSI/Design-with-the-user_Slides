@@ -57,6 +57,11 @@ body {
 background: #3093d1;
 color: white;
 padding: 30px !important;
+text-transform:uppercase;
+}
+
+.reveal h2 {
+font-size: 32px;
 }
 
 /*********************************************
