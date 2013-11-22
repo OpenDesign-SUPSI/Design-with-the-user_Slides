@@ -466,7 +466,7 @@
 					<pre><code data-trim>
 					cd directoryname #Enter into the project directory
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git init #Start local repository
 					</code></pre>
 					<pre><code data-trim>
@@ -478,7 +478,7 @@
 					<pre><code data-trim>
 					git add * #Add all files to the stage
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git commit -m "messagetext" #Commit changes with a message
 					</code></pre>
 				</section>
@@ -494,18 +494,57 @@
 					<pre><code data-trim>
 					git mv filename wheretomove #Move a file within Git
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git log #Commit history in the command line
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					gitk #Commit history in a separate window
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git diff-tree --no-commit-id --name-only -r commithash #Changed files of a commit
 					</code></pre>
 					<pre><code data-trim>
 					git ls-tree --name-only commithash #All files of a commit
 					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Using Git locally (04): undoing</h2>
+					<pre><code data-trim>
+					01: git commit -m "initial commit"
+					</code></pre>
+					<pre><code data-trim>
+					02: git add forgotten_file
+					</code></pre>
+					<pre><code data-trim class="python">
+					git commit --amend #Replace last commit with added/removed files
+					</code></pre>
+					<pre><code data-trim class="python">
+					git reset HEAD filename #Unstage a staged file
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout -- filename #Overwrite a working file with last commit version
+					</code></pre>
+
+<p class="source">More information: <a href="http://git-scm.com/book/en/Git-Basics-Undoing-Things">http://git-scm.com/book/en/Git-Basics-Undoing-Things</a> </p>
+					
+					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Git: commit history</h2>
+					<a href="http://git-scm.com/book/en/Git-Branching-What-a-Branch-Is">
+					<img src="images/git-commits01.jpg">
+					</a>
+					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
+				</section>
+				
+				<section>
+					<h2>Git: commit history</h2>
+					<a href="http://git-scm.com/book/en/Git-Branching-What-a-Branch-Is">
+					<img src="images/git-commits02.jpg">
+					</a>
+					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
 				</section>
 				
 				<section>
@@ -533,30 +572,7 @@
 					</code></pre>
 				</section>
 				
-				<section>
-					<h2>Using Git locally (04): go back in time</h2>
-					<pre><code data-trim>
-					
-					</code></pre>
-					<pre><code data-trim>
-					
-					</code></pre>
-					<pre><code data-trim>
-					
-					</code></pre>
-					<pre><code data-trim>
-					
-					</code></pre>
-					<pre><code data-trim>
-					
-					</code></pre>
-					<pre><code data-trim>
-					
-					</code></pre>
-					<pre><code data-trim>
-					
-					</code></pre>
-				</section>
+				
 
 
 
