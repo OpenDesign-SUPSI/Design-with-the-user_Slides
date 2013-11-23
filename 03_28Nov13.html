@@ -344,7 +344,7 @@
 				
 				<section>
 					<h2>The command line, some notes (02)</h2>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					mkdir directoryname #Make a directory
 					</code></pre>
 					<pre><code data-trim>
@@ -401,7 +401,7 @@
 				
 				<section>
 					<h2>Configure Git to use P4Merge (on Mac)</h2>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git config --global merge.tool p4mergetool
 					</code></pre>
 					<pre><code data-trim>
@@ -414,7 +414,7 @@
 					<pre><code data-trim>
 					git config --global mergetool.keepBackup false
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git config --global diff.tool p4mergetool
 					</code></pre>
 					<pre><code data-trim>
@@ -426,22 +426,22 @@
 				
 				<section>
 					<h2>Configure Git to use P4Merge (on Win)</h2>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git config --global merge.tool p4mergetool
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git config --global mergetool.p4merge.cmd 'p4merge.exe \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"'
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git config --global mergetool.p4mergetool.trustExitCode false
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git config --global mergetool.keepBackup false
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git config --global diff.tool p4mergetool
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git config --global difftool.p4merge.cmd 'p4merge.exe \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"'
 					</code></pre>
 					<p class="source">Source: <a href="https://gist.github.com/daredude/1350855">https://gist.github.com/daredude/1350855</a>
