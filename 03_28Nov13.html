@@ -326,7 +326,7 @@
 					pwd #Print current directory
 					</code></pre>
 					<pre><code data-trim class="python">
-					cd directoryname #Enter into a directory
+					cd &lt;directory name&gt; #Enter into a directory
 					</code></pre>
 					<pre><code data-trim class="python">
 					cd .. #Exit from the directory by going to the parent directory
@@ -345,23 +345,23 @@
 				<section>
 					<h2>The command line, some notes (02)</h2>
 					<pre><code data-trim class="python">
-					mkdir directoryname #Make a directory
+					mkdir &lt;directory name&gt; #Make a directory
 					</code></pre>
 					<pre><code data-trim class="python">
-					rm -r directoryname #Erase a directory and its contents
+					rm -r &lt;directory name&gt; #Erase a directory and its contents
 					</code></pre>
 					<pre><code data-trim class="python">
-					touch namefile #Make an empty file
+					touch &lt;file name&gt; #Make an empty file
 					</code></pre>
 					<pre><code data-trim class="python">
-					vim namefile #Edit an empty file.
+					vim &lt;file name&gt; #Edit an empty file.
 					</code></pre>
 					<p>"I" for editing and then "Esc", ":w" for saving, ":q" for quitting</p>
 					<pre><code data-trim class="python">
-					rm namefile #Erase a file
+					rm &lt;file name&gt; #Erase a file
 					</code></pre>
 					<pre><code data-trim class="python">
-					mv namefile wheretomove #Move or rename a file
+					mv &lt;file name&gt; &lt;where to move it&gt; #Move or rename a file
 					</code></pre>
 				</section>
 				
@@ -464,7 +464,7 @@
 				<section>
 					<h2>Using Git locally (01): start</h2>
 					<pre><code data-trim class="python">
-					cd directoryname #Enter into the project directory
+					cd &lt;directory name&gt; #Enter into the project directory
 					</code></pre>
 					<pre><code data-trim class="python">
 					git init #Start local repository
@@ -473,7 +473,7 @@
 					git status #Get status of the working directory/stage
 					</code></pre>
 					<pre><code data-trim class="python">
-					git add namefile #Add a file to the stage
+					git add &lt;file name&gt; #Add a file to the stage
 					</code></pre>
 					<pre><code data-trim class="python">
 					git add * #Add all files to the stage
@@ -486,13 +486,13 @@
 				<section>
 					<h2>Using Git locally (02): modifications and history</h2>
 					<pre><code data-trim class="python">
-					git rm filename #Erase a file within Git
+					git rm &lt;file name&gt; #Erase a file within Git
 					</code></pre>
 					<pre><code data-trim class="python">
-					git rm -f filename #Erase a file from the index from Git 
+					git rm -f &lt;file name&gt; #Erase a file from the index from Git 
 					</code></pre>
 					<pre><code data-trim class="python">
-					git mv filename wheretomove #Move a file within Git
+					git mv &lt;file name&gt; &lt;wheretomove&gt; #Move a file within Git
 					</code></pre>
 					<pre><code data-trim class="python">
 					git log #Commit history in the command line
@@ -501,10 +501,10 @@
 					gitk #Commit history in a separate window
 					</code></pre>
 					<pre><code data-trim class="python">
-					git diff-tree --no-commit-id --name-only -r commithash #Changed files of a commit
+					git diff-tree --no-commit-id --name-only -r &lt;commithash&gt; #Changed files of a commit
 					</code></pre>
 					<pre><code data-trim class="python">
-					git ls-tree --name-only commithash #All files of a commit
+					git ls-tree --name-only &lt;commithash&gt; #All files of a commit
 					</code></pre>
 				</section>
 				
@@ -514,16 +514,16 @@
 					01: git commit -m "initial commit"
 					</code></pre>
 					<pre><code data-trim class="python">
-					02: git add forgotten_file
+					02: git add &lt;forgotten file&gt;
 					</code></pre>
 					<pre><code data-trim class="python">
 					git commit --amend #Replace last commit with added/removed files
 					</code></pre>
 					<pre><code data-trim class="python">
-					git reset HEAD filename #Unstage a staged file
+					git reset HEAD &lt;file name&gt; #Unstage a staged file
 					</code></pre>
 					<pre><code data-trim class="python">
-					git checkout -- filename #Overwrite a working file with last commit version
+					git checkout -- &lt;file name&gt; #Overwrite a file with last commit version
 					</code></pre>
 <p class="source">More information: <a href="http://git-scm.com/book/en/Git-Basics-Undoing-Things">http://git-scm.com/book/en/Git-Basics-Undoing-Things</a> </p>
 					</code></pre>
@@ -532,25 +532,25 @@
 				<section>
 					<h2>Using Git remotely: Remotes (A) (05)</h2>
 					<pre><code data-trim class="python">
-					
+					git clone &lt;link to repository&gt; #Clone a remote repo locally
 					</code></pre>
 					<pre><code data-trim class="python">
-					
+					git add remote &lt;name&gt; &lt;link to repo&gt; #Add a remote repository with a name
 					</code></pre>
 					<pre><code data-trim class="python">
-					
+					git remote -v #View current remotes
 					</code></pre>
 					<pre><code data-trim class="python">
-					
+					git remote rm &lt;name of the remote&gt; #Remove a remote repo
 					</code></pre>
 					<pre><code data-trim class="python">
-					
+					git push &lt;name of the remote&gt; #Push local changes to remote
 					</code></pre>
 					<pre><code data-trim class="python">
-					
+					git pull &lt;name of the remote&gt; #Get+merge new version from remote
 					</code></pre>
 					<pre><code data-trim class="python">
-					
+					...
 					</code></pre>
 				</section>
 				
