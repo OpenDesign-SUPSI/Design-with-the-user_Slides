@@ -322,22 +322,22 @@
 				
 				<section>
 					<h2>The command line, some notes (01)</h2>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					pwd #Print current directory
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					cd directoryname #Enter into a directory
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					cd .. #Exit from the directory by going to the parent directory
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					ls #List the files of the current directory
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					ls -l #List the files  of the current directory, with details
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					ls -la #List the files with hidden files and folders
 					</code></pre>
 				</section>
@@ -347,33 +347,33 @@
 					<pre><code data-trim class="python">
 					mkdir directoryname #Make a directory
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					rm -r directoryname #Erase a directory and its contents
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					touch namefile #Make an empty file
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					vim namefile #Edit an empty file.
 					</code></pre>
 					<p>"I" for editing and then "Esc", ":w" for saving, ":q" for quitting</p>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					rm namefile #Erase a file
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					mv namefile wheretomove #Move or rename a file
 					</code></pre>
 				</section>
 				
 				<section>
 					<h2>Git: configuration</h2>
-					<pre><code data-trim>				
+					<pre><code data-trim class="python">				
 					git config --global user.name "Name Surname" #Configure your name
 					</code></pre>
-					<pre><code data-trim>				
+					<pre><code data-trim class="python">				
 					git config --global user.email "email@email.com" #Configure your e-mail
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git config --global color.ui auto #Color the output
 					</code></pre>
 				</section>
@@ -404,20 +404,20 @@
 					<pre><code data-trim class="python">
 					git config --global merge.tool p4mergetool
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git config --global mergetool.p4mergetool.cmd \
 "/Applications/p4merge.app/Contents/Resources/launchp4merge \$PWD/\$BASE \$PWD/\$REMOTE \$PWD/\$LOCAL \$PWD/\$MERGED"
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git config --global mergetool.p4mergetool.trustExitCode false
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git config --global mergetool.keepBackup false
 					</code></pre>
 					<pre><code data-trim class="python">
 					git config --global diff.tool p4mergetool
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git config --global difftool.p4mergetool.cmd \
 "/Applications/p4merge.app/Contents/Resources/launchp4merge \$LOCAL \$REMOTE"
 					</code></pre>
@@ -463,19 +463,19 @@
 
 				<section>
 					<h2>Using Git locally (01): start</h2>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					cd directoryname #Enter into the project directory
 					</code></pre>
 					<pre><code data-trim class="python">
 					git init #Start local repository
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git status #Get status of the working directory/stage
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git add namefile #Add a file to the stage
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git add * #Add all files to the stage
 					</code></pre>
 					<pre><code data-trim class="python">
@@ -485,13 +485,13 @@
 				
 				<section>
 					<h2>Using Git locally (02): modifications and history</h2>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git rm filename #Erase a file within Git
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git rm -f filename #Erase a file from the index from Git 
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git mv filename wheretomove #Move a file within Git
 					</code></pre>
 					<pre><code data-trim class="python">
@@ -503,17 +503,17 @@
 					<pre><code data-trim class="python">
 					git diff-tree --no-commit-id --name-only -r commithash #Changed files of a commit
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					git ls-tree --name-only commithash #All files of a commit
 					</code></pre>
 				</section>
 				
 				<section>
 					<h2>Using Git locally (04): undoing</h2>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					01: git commit -m "initial commit"
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					02: git add forgotten_file
 					</code></pre>
 					<pre><code data-trim class="python">
@@ -525,8 +525,31 @@
 					<pre><code data-trim class="python">
 					git checkout -- filename #Overwrite a working file with last commit version
 					</code></pre>
-
 <p class="source">More information: <a href="http://git-scm.com/book/en/Git-Basics-Undoing-Things">http://git-scm.com/book/en/Git-Basics-Undoing-Things</a> </p>
+					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Using Git remotely: Remotes (A) (05)</h2>
+					<pre><code data-trim class="python">
+					
+					</code></pre>
+					<pre><code data-trim class="python">
+					
+					</code></pre>
+					<pre><code data-trim class="python">
+					
+					</code></pre>
+					<pre><code data-trim class="python">
+					
+					</code></pre>
+					<pre><code data-trim class="python">
+					
+					</code></pre>
+					<pre><code data-trim class="python">
+					
+					</code></pre>
+					<pre><code data-trim class="python">
 					
 					</code></pre>
 				</section>
@@ -549,25 +572,25 @@
 				
 				<section>
 					<h2>Using Git locally (03): branches</h2>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					
 					</code></pre>
-					<pre><code data-trim>
+					<pre><code data-trim class="python">
 					
 					</code></pre>
 				</section>
