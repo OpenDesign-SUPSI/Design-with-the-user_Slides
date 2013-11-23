@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Design with the user: Version Control Systems</title>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/supsi.css" id="theme">
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+		
+		<link rel="icon" href="http://www.maind.supsi.ch/Master_Interaction_Design-favicon.jpg" type="image/x-icon" />
+                <link rel="shortcut icon" href="http://www.maind.supsi.ch/Master_Interaction_Design-favicon.jpg" type="image/x-icon" />
+		
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Design with the user</h1>
+					<h3>05 December 2013</h3>
+				</section>
+				
+				<section>
+					<h3>1. Git</h3>
+					<h3>2. GitHub</h3>
+				</section>
+				
+				<section>
+					<h1>1. Git</h1>
+				</section>
+				
+				
+				
+				<section>
+					<h2>Configure Git to use P4Merge (on Mac)</h2>
+					<pre><code data-trim class="python">
+	
+					</code></pre>
+					<pre><code data-trim class="python">
+
+					</code></pre>
+					<pre><code data-trim class="python">
+
+					</code></pre>
+					<pre><code data-trim class="python">
+
+					</code></pre>
+					<pre><code data-trim class="python">
+
+					</code></pre>
+					<pre><code data-trim class="python">
+
+					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Configure Git to use P4Merge (on Win)</h2>
+					<pre><code data-trim class="python">
+					git config --global merge.tool p4mergetool
+					</code></pre>
+					<pre><code data-trim class="python">
+					git config --global mergetool.p4merge.cmd 'p4merge.exe \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"'
+					</code></pre>
+					<pre><code data-trim class="python">
+					git config --global mergetool.p4mergetool.trustExitCode false
+					</code></pre>
+					<pre><code data-trim class="python">
+					git config --global mergetool.keepBackup false
+					</code></pre>
+					<pre><code data-trim class="python">
+					git config --global diff.tool p4mergetool
+					</code></pre>
+					<pre><code data-trim class="python">
+					git config --global difftool.p4merge.cmd 'p4merge.exe \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"'
+					</code></pre>
+					<p class="source">Source: <a href="https://gist.github.com/daredude/1350855">https://gist.github.com/daredude/1350855</a>
+				</section>
+				
+				
+				<section>
+					<h3>Lunch time! Questions?</h3>
+					<h3>See you at 13:00</h3>
+				</section>
+				
+				<section>
+					<h2>Git: workflow of a file</h2>
+					<a href="http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository">
+					<img src="images/git-file-workflow.jpg">
+					</a>
+					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
+				</section>
+
+				<section>
+					<h2>Using Git locally (01): start</h2>
+					<pre><code data-trim class="python">
+					cd &lt;directory name&gt; #Enter into the project directory
+					</code></pre>
+					<pre><code data-trim class="python">
+					git init #Start local repository
+					</code></pre>
+					<pre><code data-trim class="python">
+					git status #Get status of the working directory/stage
+					</code></pre>
+					<pre><code data-trim class="python">
+					git add &lt;file name&gt; #Add a file to the stage
+					</code></pre>
+					<pre><code data-trim class="python">
+					git add * #Add all files to the stage
+					</code></pre>
+					<pre><code data-trim class="python">
+					git commit -m "messagetext" #Commit changes with a message
+					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Using Git locally (02): modifications and history</h2>
+					<pre><code data-trim class="python">
+					git rm &lt;file name&gt; #Erase a file within Git
+					</code></pre>
+					<pre><code data-trim class="python">
+					git rm -f &lt;file name&gt; #Erase a file from the index from Git 
+					</code></pre>
+					<pre><code data-trim class="python">
+					git mv &lt;file name&gt; &lt;wheretomove&gt; #Move a file within Git
+					</code></pre>
+					<pre><code data-trim class="python">
+					git log #Commit history in the command line
+					</code></pre>
+					<pre><code data-trim class="python">
+					gitk #Commit history in a separate window
+					</code></pre>
+					<pre><code data-trim class="python">
+					git diff-tree --no-commit-id --name-only -r &lt;commithash&gt; #Changed files of a commit
+					</code></pre>
+					<pre><code data-trim class="python">
+					git ls-tree --name-only &lt;commithash&gt; #All files of a commit
+					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Using Git locally (04): undoing</h2>
+					<pre><code data-trim class="python">
+					01: git commit -m "initial commit"
+					</code></pre>
+					<pre><code data-trim class="python">
+					02: git add &lt;forgotten file&gt;
+					</code></pre>
+					<pre><code data-trim class="python">
+					git commit --amend #Replace last commit with added/removed files
+					</code></pre>
+					<pre><code data-trim class="python">
+					git reset HEAD &lt;file name&gt; #Unstage a staged file
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout -- &lt;file name&gt; #Overwrite a file with last commit version
+					</code></pre>
+<p class="source">More information: <a href="http://git-scm.com/book/en/Git-Basics-Undoing-Things">http://git-scm.com/book/en/Git-Basics-Undoing-Things</a> </p>
+					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Using Git remotely (05): Remotes (A)</h2>
+					<pre><code data-trim class="python">
+					git clone &lt;link to repository&gt; #Clone a remote repo locally
+					</code></pre>
+					<pre><code data-trim class="python">
+					git add remote &lt;name&gt; &lt;link to repo&gt; #Add a remote repository with a name
+					</code></pre>
+					<pre><code data-trim class="python">
+					git remote -v #View current remotes
+					</code></pre>
+					<pre><code data-trim class="python">
+					git remote rm &lt;name of the remote&gt; #Remove a remote repo
+					</code></pre>
+					<pre><code data-trim class="python">
+					git push &lt;name of the remote&gt; #Push local changes to remote
+					</code></pre>
+					<pre><code data-trim class="python">
+					git pull &lt;name of the remote&gt; #Get+merge new version from remote
+					</code></pre>
+					<pre><code data-trim class="python">
+					...
+					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Git: commit history</h2>
+					<a href="http://git-scm.com/book/en/Git-Branching-What-a-Branch-Is">
+					<img src="images/git-commits01.jpg">
+					</a>
+					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
+				</section>
+				
+				<section>
+					<h2>Git: commit history</h2>
+					<a href="http://git-scm.com/book/en/Git-Branching-What-a-Branch-Is">
+					<img src="images/git-commits02.jpg">
+					</a>
+					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
+				</section>
+				
+				<section>
+					<h2>Using Git locally (06): branches</h2>
+					<pre><code data-trim class="python">
+					git branch &lt;name of the branch&gt; #Create a local branch
+					</code></pre>
+					<pre><code data-trim class="python">
+					git push &lt;name of the remote&gt; &lt;name of the branch&gt; #Push branch to remote
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout &lt;name of the branch&gt; #Switch to another branch
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout master #Go back to master branch
+					</code></pre>
+					<pre><code data-trim class="python">
+					git diff &lt;name of the branch&gt; master #Diff branches before merging
+					</code></pre>
+					<pre><code data-trim class="python">
+					git merge &lt;name of the branch&gt; #Merge the branch with current branch
+					</code></pre>
+					<pre><code data-trim class="python">
+					git branch -d &lt;name of the branch&gt; #Delete a local branch
+					</code></pre>
+					<pre><code data-trim class="python">
+					# and don't forget to push it
+					</code></pre>
+				</section>
+				
+				
+
+
+
+				<section>
+					<h1>Thank you!</h1>
+					<p>
+						<small><a href="http://openp2pdesign.org">Massimo Menichinelli</a> / <a href="mailto:info@openp2pdesign.org">info@openp2pdesign.org</a> / <a href="http://twitter.com/openp2pdesign">@openp2pdesign</a></small>
+					</p>
+				</section>
+
+			</div>
+
+<div class="credits">
+	<div class="license">
+  		<p style="font-size: 12px !important;">
+		<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
+		</p>
+		<p style="font-size: 12px !important;">Massimo Menichinelli - 2013<br>
+		<a href="http://openp2pdesign.org">openp2pdesign.org</a></p>
+	</div>
+	<div class="supsi">
+		<a href="http://www.maind.supsi.ch/">
+		<img src="css/theme/images/supsi.jpg">
+		</a>
+	</div>
+</div>
+
+		</div>
+		
+		
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+
+
+	</body>
+</html>
