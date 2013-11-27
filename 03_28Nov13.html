@@ -51,6 +51,15 @@
 				</section>
 				
 				<section>
+					<h2>Producing Open Source Software</h2>
+					<a href="http://producingoss.com/">
+					<img src="images/producingoss.jpg">
+					</a>
+					<p class="source">Source: <a href="http://producingoss.com/">http://producingoss.com/</a>
+</p>
+				</section>
+				
+				<section>
 					<h2>A collaborative process: an example</h2>
 					<a href="http://reprap.org/wiki/Mendel">
 					<img src="images/reprap01.jpg">
@@ -460,6 +469,14 @@
 					</a>
 					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
 				</section>
+				
+				<section>
+					<h2>Git: workflow</h2>
+					<a href="http://commons.wikimedia.org/wiki/Category:Git">
+					<img src="images/gitflow.jpg">
+					</a>
+					<p class="source">Source: <a href="http://commons.wikimedia.org/wiki/Category:Git">http://commons.wikimedia.org/wiki/Category:Git</a></p>
+				</section>
 
 				<section>
 					<h2>Using Git locally (01): start</h2>
@@ -476,7 +493,10 @@
 					git add &lt;file name&gt; #Add a file to the stage
 					</code></pre>
 					<pre><code data-trim class="python">
-					git add * #Add all files to the stage
+					git add . #Add all files from current directory to the stage
+					</code></pre>
+					<pre><code data-trim class="python">
+					git add -u #Update (add) all files already being tracked
 					</code></pre>
 					<pre><code data-trim class="python">
 					git commit -m "messagetext" #Commit changes with a message
@@ -571,6 +591,30 @@
 				</section>
 				
 				<section>
+					<h2>Git: Branching</h2>
+					<a href="http://git-scm.com/book/en/Git-Branching-What-a-Branch-Is">
+					<img src="images/git-commits03.jpg">
+					</a>
+					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
+				</section>
+				
+				<section>
+					<h2>Git: Branching</h2>
+					<a href="http://git-scm.com/book/en/Git-Branching-What-a-Branch-Is">
+					<img src="images/git-commits04.jpg">
+					</a>
+					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
+				</section>
+				
+				<section>
+					<h2>Git: Merging</h2>
+					<a href="http://git-scm.com/book/en/Git-Branching-What-a-Branch-Is">
+					<img src="images/git-commits05.jpg">
+					</a>
+					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
+				</section>
+				
+				<section>
 					<h2>Using Git locally (06): branches</h2>
 					<pre><code data-trim class="python">
 					git branch &lt;name of the branch&gt; #Create a local branch
@@ -594,7 +638,7 @@
 					git branch -d &lt;name of the branch&gt; #Delete a local branch
 					</code></pre>
 					<pre><code data-trim class="python">
-					# and don't forget to push it
+					git push origin :&lt;name of the branch&gt; #Delete a remote branch
 					</code></pre>
 				</section>
 				
