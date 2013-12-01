@@ -249,6 +249,42 @@
 				</section>
 				
 				<section>
+					<h2>Using Git: Diff & Difftool</h2>
+					<pre><code data-trim class="python">
+					git diff #Diff w/ Index / Working Directory
+					</code></pre>
+					<pre><code data-trim class="python">
+					git diff HEAD #Diff w/ HEAD / Working Directory
+					</code></pre>
+					<pre><code data-trim class="python">
+					git diff &lt;sha1&gt; &lt;sha2&gt; #Diff w/ two commits
+					</code></pre>
+					<pre><code data-trim class="python">
+					git difftool &lt;...&gt; #Better diff and for images
+					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Using Git: Merge binary files</h2>
+					<pre><code data-trim class="python">
+  					CONFLICT (content): Merge conflict in index.html
+  					</code></pre>
+  					<pre><code data-trim class="python">
+  					Automatic merge failed; fix conflicts and then commit the result.
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout --theirs &lt;filename&gt; #Keep their/remote file
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout --ours &lt;filename&gt; #Keep my/local file
+					</code></pre>
+					<pre><code data-trim class="python">
+					git add &lt;filename&gt; #After checkout, don't forget to add
+					</code></pre>
+					<p class="source">Source: <a href="http://gitready.com/advanced/2009/02/25/keep-either-file-in-merge-conflicts.html">http://gitready.com/advanced/2009/02/25/keep-either-file-in-merge-conflicts.html</a></p>
+				</section>
+				
+				<section>
 					<h3>Lunch time! Questions?</h3>
 					<h3>See you at 13:00</h3>
 				</section>
