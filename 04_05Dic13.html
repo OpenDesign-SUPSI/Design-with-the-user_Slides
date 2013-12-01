@@ -143,7 +143,7 @@
 				</section>
 				
 				<section>
-					<h2>Using Git remotely (05): Remotes (A)</h2>
+					<h2>Using Git remotely (05): Remotes</h2>
 					<pre><code data-trim class="python">
 					git clone &lt;link to repository&gt; #Clone a remote repo locally
 					</code></pre>
@@ -160,10 +160,10 @@
 					git push &lt;name of the remote&gt; #Push local changes to remote
 					</code></pre>
 					<pre><code data-trim class="python">
-					git pull &lt;name of the remote&gt; #Get+merge new version from remote
+					git fetch &lt;name of the remote&gt; #Get new version from remote without merge
 					</code></pre>
 					<pre><code data-trim class="python">
-					...
+					git pull &lt;name of the remote&gt; #Get+merge new version from remote
 					</code></pre>
 				</section>
 				
@@ -236,6 +236,19 @@
 				</section>	
 				
 				<section>
+					<h2>Using Git: Tags</h2>
+					<pre><code data-trim class="python">
+					git tag #List existing tags
+					</code></pre>
+					<pre><code data-trim class="python">
+					git tag -a tagname -m 'messagetext' #Create a version tag, tagname = v1.0
+					</code></pre>
+					<pre><code data-trim class="python">
+					git push origin tagname # Push a tag to the remote repository
+					</code></pre>
+				</section>
+				
+				<section>
 					<h3>Lunch time! Questions?</h3>
 					<h3>See you at 13:00</h3>
 				</section>
@@ -248,27 +261,7 @@
 					<p class="source">Source: <a href="https://help.github.com/articles/what-is-my-disk-quota">https://help.github.com/articles/what-is-my-disk-quota</a></p>
 				</section>
 
-				<section>
-					<h2>Using Git locally (01): start</h2>
-					<pre><code data-trim class="python">
-					cd &lt;directory name&gt; #Enter into the project directory
-					</code></pre>
-					<pre><code data-trim class="python">
-					git init #Start local repository
-					</code></pre>
-					<pre><code data-trim class="python">
-					git status #Get status of the working directory/stage
-					</code></pre>
-					<pre><code data-trim class="python">
-					git add &lt;file name&gt; #Add a file to the stage
-					</code></pre>
-					<pre><code data-trim class="python">
-					git add * #Add all files to the stage
-					</code></pre>
-					<pre><code data-trim class="python">
-					git commit -m "messagetext" #Commit changes with a message
-					</code></pre>
-				</section>
+				
 				
 						
 				
