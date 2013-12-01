@@ -52,63 +52,20 @@
 				
 				
 				
-				<section>
-					<h2>Configure Git to use P4Merge (on Mac)</h2>
-					<pre><code data-trim class="python">
-	
-					</code></pre>
-					<pre><code data-trim class="python">
-
-					</code></pre>
-					<pre><code data-trim class="python">
-
-					</code></pre>
-					<pre><code data-trim class="python">
-
-					</code></pre>
-					<pre><code data-trim class="python">
-
-					</code></pre>
-					<pre><code data-trim class="python">
-
-					</code></pre>
-				</section>
-				
-				<section>
-					<h2>Configure Git to use P4Merge (on Win)</h2>
-					<pre><code data-trim class="python">
-					git config --global merge.tool p4mergetool
-					</code></pre>
-					<pre><code data-trim class="python">
-					git config --global mergetool.p4merge.cmd 'p4merge.exe \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"'
-					</code></pre>
-					<pre><code data-trim class="python">
-					git config --global mergetool.p4mergetool.trustExitCode false
-					</code></pre>
-					<pre><code data-trim class="python">
-					git config --global mergetool.keepBackup false
-					</code></pre>
-					<pre><code data-trim class="python">
-					git config --global diff.tool p4mergetool
-					</code></pre>
-					<pre><code data-trim class="python">
-					git config --global difftool.p4merge.cmd 'p4merge.exe \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"'
-					</code></pre>
-					<p class="source">Source: <a href="https://gist.github.com/daredude/1350855">https://gist.github.com/daredude/1350855</a>
-				</section>
-				
-				
-				<section>
-					<h3>Lunch time! Questions?</h3>
-					<h3>See you at 13:00</h3>
-				</section>
-				
-				<section>
+<section>
 					<h2>Git: workflow of a file</h2>
 					<a href="http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository">
 					<img src="images/git-file-workflow.jpg">
 					</a>
 					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
+				</section>
+				
+				<section>
+					<h2>Git: workflow</h2>
+					<a href="http://commons.wikimedia.org/wiki/Category:Git">
+					<img src="images/gitflow.jpg">
+					</a>
+					<p class="source">Source: <a href="http://commons.wikimedia.org/wiki/Category:Git">http://commons.wikimedia.org/wiki/Category:Git</a></p>
 				</section>
 
 				<section>
@@ -126,7 +83,13 @@
 					git add &lt;file name&gt; #Add a file to the stage
 					</code></pre>
 					<pre><code data-trim class="python">
-					git add * #Add all files to the stage
+					git add . #Add all files from current directory to the stage
+					</code></pre>
+					<pre><code data-trim class="python">
+					git add -a :/ #Add all files recursively
+					</code></pre>
+					<pre><code data-trim class="python">
+					git add -u #Update (add) all files already being tracked
 					</code></pre>
 					<pre><code data-trim class="python">
 					git commit -m "messagetext" #Commit changes with a message
@@ -221,6 +184,30 @@
 				</section>
 				
 				<section>
+					<h2>Git: Branching</h2>
+					<a href="http://git-scm.com/book/en/Git-Branching-What-a-Branch-Is">
+					<img src="images/git-commits03.jpg">
+					</a>
+					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
+				</section>
+				
+				<section>
+					<h2>Git: Branching</h2>
+					<a href="http://git-scm.com/book/en/Git-Branching-What-a-Branch-Is">
+					<img src="images/git-commits04.jpg">
+					</a>
+					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
+				</section>
+				
+				<section>
+					<h2>Git: Merging</h2>
+					<a href="http://git-scm.com/book/en/Git-Branching-What-a-Branch-Is">
+					<img src="images/git-commits05.jpg">
+					</a>
+					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
+				</section>
+				
+				<section>
 					<h2>Using Git locally (06): branches</h2>
 					<pre><code data-trim class="python">
 					git branch &lt;name of the branch&gt; #Create a local branch
@@ -244,10 +231,46 @@
 					git branch -d &lt;name of the branch&gt; #Delete a local branch
 					</code></pre>
 					<pre><code data-trim class="python">
-					# and don't forget to push it
+					git push origin :&lt;name of the branch&gt; #Delete a remote branch
+					</code></pre>
+				</section>	
+				
+				<section>
+					<h3>Lunch time! Questions?</h3>
+					<h3>See you at 13:00</h3>
+				</section>
+				
+				<section>
+					<h2>GitHub: Quota</h2>
+					<a href="https://help.github.com/articles/what-is-my-disk-quota">
+					<img src="images/github-quota.jpg">
+					</a>
+					<p class="source">Source: <a href="https://help.github.com/articles/what-is-my-disk-quota">https://help.github.com/articles/what-is-my-disk-quota</a></p>
+				</section>
+
+				<section>
+					<h2>Using Git locally (01): start</h2>
+					<pre><code data-trim class="python">
+					cd &lt;directory name&gt; #Enter into the project directory
+					</code></pre>
+					<pre><code data-trim class="python">
+					git init #Start local repository
+					</code></pre>
+					<pre><code data-trim class="python">
+					git status #Get status of the working directory/stage
+					</code></pre>
+					<pre><code data-trim class="python">
+					git add &lt;file name&gt; #Add a file to the stage
+					</code></pre>
+					<pre><code data-trim class="python">
+					git add * #Add all files to the stage
+					</code></pre>
+					<pre><code data-trim class="python">
+					git commit -m "messagetext" #Commit changes with a message
 					</code></pre>
 				</section>
 				
+						
 				
 
 
