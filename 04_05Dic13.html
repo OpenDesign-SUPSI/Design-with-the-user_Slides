@@ -265,6 +265,28 @@
 				</section>
 				
 				<section>
+					<h2>Git: Checkout/Reset</h2>
+					<pre><code data-trim class="python">
+					git checkout &lt;name of the branch&gt; #Switch to another branch
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout master #Go back to master branch
+					</code></pre>
+					<pre><code data-trim class="python">
+					git reset --hard &lt;sha&gt; #Replace working dir with a specific commit
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout &lt;sha&gt; #Go back in time at a specific commit
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout &lt;sha&gt; &lt;filename&gt; #Get a file from a specific commit
+					</code></pre>
+					<pre><code data-trim class="python">
+					git branch &lt;name of the branch&gt; #But then create e new branch!
+					</code></pre>
+				</section>	
+				
+				<section>
 					<h2>Using Git: Merge binary files</h2>
 					<pre><code data-trim class="python">
   					CONFLICT (content): Merge conflict in index.html
@@ -283,6 +305,8 @@
 					</code></pre>
 					<p class="source">Source: <a href="http://gitready.com/advanced/2009/02/25/keep-either-file-in-merge-conflicts.html">http://gitready.com/advanced/2009/02/25/keep-either-file-in-merge-conflicts.html</a></p>
 				</section>
+				
+				
 				
 				<section>
 					<h3>Lunch time! Questions?</h3>
