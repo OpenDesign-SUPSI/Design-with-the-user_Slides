@@ -42,14 +42,8 @@
 				</section>
 				
 				<section>
-					<h3>1. Git</h3>
-					<h3>2. GitHub</h3>
-				</section>
-				
-				<section>
-					<h1>1. Git</h1>
-				</section>
-				
+					<h3>1. Git + GitHub</h3>
+				</section>				
 				
 				
 <section>
@@ -69,7 +63,7 @@
 				</section>
 
 				<section>
-					<h2>Using Git locally (01): start</h2>
+					<h2>Using Git locally: start</h2>
 					<pre><code data-trim class="python">
 					cd &lt;directory name&gt; #Enter into the project directory
 					</code></pre>
@@ -97,7 +91,12 @@
 				</section>
 				
 				<section>
-					<h2>Using Git locally (02): modifications and history</h2>
+					<h2>Exercise: 01</h2>
+					<p>Create a local repository, and add + commit your bio file.</p>
+				</section>
+				
+				<section>
+					<h2>Using Git locally: modifications and history</h2>
 					<pre><code data-trim class="python">
 					git rm &lt;file name&gt; #Erase a file within Git
 					</code></pre>
@@ -122,7 +121,12 @@
 				</section>
 				
 				<section>
-					<h2>Using Git locally (04): undoing</h2>
+					<h2>Exercise: 02</h2>
+					<p>Rename your bio file name.surname.md.</p>
+				</section>
+				
+				<section>
+					<h2>Using Git locally: quick undoing</h2>
 					<pre><code data-trim class="python">
 					01: git commit -m "initial commit"
 					</code></pre>
@@ -143,7 +147,7 @@
 				</section>
 				
 				<section>
-					<h2>Using Git remotely (05): Remotes</h2>
+					<h2>Using Git remotely: Remotes</h2>
 					<pre><code data-trim class="python">
 					git clone &lt;link to repository&gt; #Clone a remote repo locally
 					</code></pre>
@@ -165,6 +169,11 @@
 					<pre><code data-trim class="python">
 					git pull &lt;name of the remote&gt; #Get+merge new version from remote
 					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Exercise: 03</h2>
+					<p>Create a repository on GitHub, and add its remote to your local repository, and push your bio.</p>
 				</section>
 				
 				<section>
@@ -208,7 +217,7 @@
 				</section>
 				
 				<section>
-					<h2>Using Git locally (06): branches</h2>
+					<h2>Using Git locally: branches</h2>
 					<pre><code data-trim class="python">
 					git branch &lt;name of the branch&gt; #Create a local branch
 					</code></pre>
@@ -236,19 +245,6 @@
 				</section>	
 				
 				<section>
-					<h2>Using Git: Tags</h2>
-					<pre><code data-trim class="python">
-					git tag #List existing tags
-					</code></pre>
-					<pre><code data-trim class="python">
-					git tag -a tagname -m 'messagetext' #Create a version tag, tagname = v1.0
-					</code></pre>
-					<pre><code data-trim class="python">
-					git push origin tagname # Push a tag to the remote repository
-					</code></pre>
-				</section>
-				
-				<section>
 					<h2>Using Git: Diff & Difftool</h2>
 					<pre><code data-trim class="python">
 					git diff #Diff w/ Index / Working Directory
@@ -262,6 +258,29 @@
 					<pre><code data-trim class="python">
 					git difftool &lt;...&gt; #Better diff and for images
 					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Exercise: 04</h2>
+					<p>Create a branch where you will add your hobby to the bio, push it to GitHub.</p><p>Diff(tool) it with the master, merge and push to GitHub.</p>
+				</section>	
+				
+				<section>
+					<h2>Using Git: Tags</h2>
+					<pre><code data-trim class="python">
+					git tag #List existing tags
+					</code></pre>
+					<pre><code data-trim class="python">
+					git tag -a tagname -m 'messagetext' #Create a version tag, tagname = v1.0
+					</code></pre>
+					<pre><code data-trim class="python">
+					git push origin tagname # Push a tag to the remote repository
+					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Exercise: 05</h2>
+					<p>Create v0.1 and push it to GitHub</p>
 				</section>
 				
 				<section>
@@ -285,6 +304,11 @@
 					git checkout &lt;sha&gt; &lt;filename&gt; #Get a file from a specific commit
 					</code></pre>
 				</section>	
+				
+				<section>
+					<h2>Exercise: 06</h2>
+					<p>Get from history your first version of the bio, and push it to GitHub.</p>
+				</section>
 				
 				<section>
 					<h2>Using Git: Merge binary files</h2>
@@ -320,6 +344,23 @@
 					</a>
 					<p class="source">Source: <a href="https://help.github.com/articles/what-is-my-disk-quota">https://help.github.com/articles/what-is-my-disk-quota</a></p>
 				</section>
+				
+				<section>
+					<h2>GitHub: Image Diff</h2>
+					<a href="https://github.com/blog/817-behold-image-view-modes">
+					<img src="images/github-image-diff.jpg">
+					</a>
+					<p class="source">Source: <a href="https://github.com/blog/817-behold-image-view-modes">https://github.com/blog/817-behold-image-view-modes</a></p>
+				</section>
+				
+				<section>
+					<h2>GitHub: 3D Diff</h2>
+					<a href="https://github.com/blog/1633-3d-file-diffs">
+					<img src="images/github-3d-diff.jpg">
+					</a>
+					<p class="source">Source: <a href="https://github.com/blog/1633-3d-file-diffs">https://github.com/blog/1633-3d-file-diffs</a></p>
+				</section>
+
 
 				<section>
 					<h2>Git: Centralized Workflow</h2>
@@ -343,6 +384,22 @@
 					<img src="images/benevolent-dictator-workflow.jpg">
 					</a>
 					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
+				</section>
+				
+				<section>
+					<h2>Git: Forking Workflow</h2>
+					<a href="https://www.atlassian.com/git/workflows#!workflow-forking">
+					<img src="images/forking.jpg">
+					</a>
+					<p class="source"><a href="https://www.atlassian.com/git/workflows#!workflow-forking">https://www.atlassian.com/git/workflows#!workflow-forking</a></p>
+				</section>
+				
+				<section>
+					<h2>Git: Gitflow Workflow</h2>
+					<a href="https://www.atlassian.com/git/workflows#!workflow-gitflow">
+					<img src="images/gitflow-workflow.jpg">
+					</a>
+					<p class="source"><a href="https://www.atlassian.com/git/workflows#!workflow-gitflow">https://www.atlassian.com/git/workflows#!workflow-gitflow</a></p>
 				</section>
 				
 						
