@@ -271,10 +271,10 @@
 					git tag #List existing tags
 					</code></pre>
 					<pre><code data-trim class="python">
-					git tag -a tagname -m 'messagetext' #Create a version tag, tagname = v1.0
+					git tag -a &lt;tagname&gt; -m 'messagetext' #Create a version tag, tagname = v1.0
 					</code></pre>
 					<pre><code data-trim class="python">
-					git push origin tagname # Push a tag to the remote repository
+					git push origin &lt;tagname&gt; # Push a tag to the remote repository
 					</code></pre>
 				</section>
 				
@@ -306,6 +306,36 @@
 				</section>	
 				
 				<section>
+					<h2>Git: Checkout & Detached Head</h2>
+					<pre><code data-trim class="python">
+					git checkout &lt;sha&gt; &lt;filename&gt; #Get a file from a specific commit
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout &lt;sha&gt; #Go back in time at a specific commit
+					</code></pre>
+					<p>You will get a Detached Head, so...</p>
+					<pre><code data-trim class="python">
+					git branch &lt;name of the branch&gt; #But then create e new branch!
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout &lt;name of the branch&gt; #Go to the new branch!
+					</code></pre>
+					<pre><code data-trim class="python">
+					... #Do your modifications
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout -f master &lt;name of the branch&gt; #Update master
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout master  #Go to master
+					</code></pre>
+					<pre><code data-trim class="python">
+					git branch -d &lt;name of the branch&gt; #Delete that branch if not needed
+					</code></pre>
+					<p class="source">Source: <a href="http://stackoverflow.com/questions/5772192/git-how-can-i-reconcile-detached-head-with-master-origin">http://stackoverflow.com/questions/5772192/git-how-can-i-reconcile-detached-head-with-master-origin</a>
+				</section>	
+				
+				<section>
 					<h2>Exercise: 06</h2>
 					<p>Get from history your first version of the bio, and push it to GitHub.</p>
 				</section>
@@ -329,82 +359,6 @@
 					</code></pre>
 					<p class="source">Source: <a href="http://gitready.com/advanced/2009/02/25/keep-either-file-in-merge-conflicts.html">http://gitready.com/advanced/2009/02/25/keep-either-file-in-merge-conflicts.html</a></p>
 				</section>
-				
-				
-				
-				<section>
-					<h3>Lunch time! Questions?</h3>
-					<h3>See you at 13:00</h3>
-				</section>
-				
-				<section>
-					<h2>GitHub: Quota</h2>
-					<a href="https://help.github.com/articles/what-is-my-disk-quota">
-					<img src="images/github-quota.jpg">
-					</a>
-					<p class="source">Source: <a href="https://help.github.com/articles/what-is-my-disk-quota">https://help.github.com/articles/what-is-my-disk-quota</a></p>
-				</section>
-				
-				<section>
-					<h2>GitHub: Image Diff</h2>
-					<a href="https://github.com/blog/817-behold-image-view-modes">
-					<img src="images/github-image-diff.jpg">
-					</a>
-					<p class="source">Source: <a href="https://github.com/blog/817-behold-image-view-modes">https://github.com/blog/817-behold-image-view-modes</a></p>
-				</section>
-				
-				<section>
-					<h2>GitHub: 3D Diff</h2>
-					<a href="https://github.com/blog/1633-3d-file-diffs">
-					<img src="images/github-3d-diff.jpg">
-					</a>
-					<p class="source">Source: <a href="https://github.com/blog/1633-3d-file-diffs">https://github.com/blog/1633-3d-file-diffs</a></p>
-				</section>
-
-
-				<section>
-					<h2>Git: Centralized Workflow</h2>
-					<a href="http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows">
-					<img src="images/centralized-workflow.jpg">
-					</a>
-					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
-				</section>
-				
-				<section>
-					<h2>Git: Integration Manager Workflow</h2>
-					<a href="http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows">
-					<img src="images/integration-manager-workflow.jpg">
-					</a>
-					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
-				</section>
-				
-				<section>
-					<h2>Git: Benevolent Dictator Workflow</h2>
-					<a href="http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows">
-					<img src="images/benevolent-dictator-workflow.jpg">
-					</a>
-					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
-				</section>
-				
-				<section>
-					<h2>Git: Forking Workflow</h2>
-					<a href="https://www.atlassian.com/git/workflows#!workflow-forking">
-					<img src="images/forking.jpg">
-					</a>
-					<p class="source"><a href="https://www.atlassian.com/git/workflows#!workflow-forking">https://www.atlassian.com/git/workflows#!workflow-forking</a></p>
-				</section>
-				
-				<section>
-					<h2>Git: Gitflow Workflow</h2>
-					<a href="https://www.atlassian.com/git/workflows#!workflow-gitflow">
-					<img src="images/gitflow-workflow.jpg">
-					</a>
-					<p class="source"><a href="https://www.atlassian.com/git/workflows#!workflow-gitflow">https://www.atlassian.com/git/workflows#!workflow-gitflow</a></p>
-				</section>
-				
-						
-				
-
 
 
 				<section>

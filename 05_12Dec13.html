@@ -42,8 +42,131 @@
 				</section>
 				
 				<section>
-					<h3>1. Open Meta-design</h3>
-				</section>				
+					<h3>1. Git + GitHub</h3>
+					<h3>2. Open Meta-design</h3>
+				</section>	
+				
+				<section>
+					<h1>1. Git + GitHub</h1>
+				</section>			
+				
+				<section>
+					<h2>Git: Checkout & Detached Head</h2>
+					<pre><code data-trim class="python">
+					git checkout &lt;name of the branch&gt; #Switch to another branch
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout master #Go back to master branch
+					</code></pre>
+					<pre><code data-trim class="python">
+					git reset --hard &lt;sha&gt; #Replace working dir with a specific commit
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout &lt;sha&gt; #Go back in time at a specific commit
+					</code></pre>
+					<pre><code data-trim class="python">
+					git branch &lt;name of the branch&gt; #But then create e new branch!
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout &lt;sha&gt; &lt;filename&gt; #Get a file from a specific commit
+					</code></pre>
+				</section>	
+				
+				<section>
+					<h2>Exercise: 06</h2>
+					<p>Get from history your first version of the bio, and push it to GitHub.</p>
+				</section>
+				
+				<section>
+					<h2>Using Git: Merge binary files</h2>
+					<pre><code data-trim class="python">
+  					CONFLICT (content): Merge conflict in index.html
+  					</code></pre>
+  					<pre><code data-trim class="python">
+  					Automatic merge failed; fix conflicts and then commit the result.
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout --theirs &lt;filename&gt; #Keep their/remote file
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout --ours &lt;filename&gt; #Keep my/local file
+					</code></pre>
+					<pre><code data-trim class="python">
+					git add &lt;filename&gt; #After checkout, don't forget to add
+					</code></pre>
+					<p class="source">Source: <a href="http://gitready.com/advanced/2009/02/25/keep-either-file-in-merge-conflicts.html">http://gitready.com/advanced/2009/02/25/keep-either-file-in-merge-conflicts.html</a></p>
+				</section>
+				
+								<section>
+					<h2>GitHub: Quota</h2>
+					<a href="https://help.github.com/articles/what-is-my-disk-quota">
+					<img src="images/github-quota.jpg">
+					</a>
+					<p class="source">Source: <a href="https://help.github.com/articles/what-is-my-disk-quota">https://help.github.com/articles/what-is-my-disk-quota</a></p>
+				</section>
+				
+				<section>
+					<h2>GitHub: Image Diff</h2>
+					<a href="https://github.com/blog/817-behold-image-view-modes">
+					<img src="images/github-image-diff.jpg">
+					</a>
+					<p class="source">Source: <a href="https://github.com/blog/817-behold-image-view-modes">https://github.com/blog/817-behold-image-view-modes</a></p>
+				</section>
+				
+				<section>
+					<h2>GitHub: 3D Diff</h2>
+					<a href="https://github.com/blog/1633-3d-file-diffs">
+					<img src="images/github-3d-diff.jpg">
+					</a>
+					<p class="source">Source: <a href="https://github.com/blog/1633-3d-file-diffs">https://github.com/blog/1633-3d-file-diffs</a></p>
+				</section>
+
+
+				<section>
+					<h2>Git: Centralized Workflow</h2>
+					<a href="http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows">
+					<img src="images/centralized-workflow.jpg">
+					</a>
+					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
+				</section>
+				
+				<section>
+					<h2>Git: Integration Manager Workflow</h2>
+					<a href="http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows">
+					<img src="images/integration-manager-workflow.jpg">
+					</a>
+					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
+				</section>
+				
+				<section>
+					<h2>Git: Benevolent Dictator Workflow</h2>
+					<a href="http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows">
+					<img src="images/benevolent-dictator-workflow.jpg">
+					</a>
+					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
+				</section>
+				
+				<section>
+					<h2>Git: Forking Workflow</h2>
+					<a href="https://www.atlassian.com/git/workflows#!workflow-forking">
+					<img src="images/forking.jpg">
+					</a>
+					<p class="source"><a href="https://www.atlassian.com/git/workflows#!workflow-forking">https://www.atlassian.com/git/workflows#!workflow-forking</a></p>
+				</section>
+				
+				<section>
+					<h2>Git: Gitflow Workflow</h2>
+					<a href="https://www.atlassian.com/git/workflows#!workflow-gitflow">
+					<img src="images/gitflow-workflow.jpg">
+					</a>
+					<p class="source"><a href="https://www.atlassian.com/git/workflows#!workflow-gitflow">https://www.atlassian.com/git/workflows#!workflow-gitflow</a></p>
+				</section>
+
+
+				<section>
+					<h1>2. Open Meta-Design</h1>
+				</section>			
+				
 				
 				<section>
 					<h2>A more systemic definition of Open Design (2)</h2>
