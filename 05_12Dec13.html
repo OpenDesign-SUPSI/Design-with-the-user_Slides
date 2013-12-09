@@ -51,7 +51,7 @@
 				</section>			
 				
 				<section>
-					<h2>Git: Checkout & Detached Head</h2>
+					<h2>Git: Checkout & Reset</h2>
 					<pre><code data-trim class="python">
 					git checkout &lt;name of the branch&gt; #Switch to another branch
 					</code></pre>
@@ -71,6 +71,37 @@
 					git checkout &lt;sha&gt; &lt;filename&gt; #Get a file from a specific commit
 					</code></pre>
 				</section>	
+				
+								<section>
+					<h2>Git: Checkout & Detached Head</h2>
+					<pre><code data-trim class="python">
+					git checkout &lt;sha&gt; &lt;filename&gt; #Get a file from a specific commit
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout &lt;sha&gt; #Go back in time at a specific commit
+					</code></pre>
+					<p>You will get a Detached Head, so...</p>
+					<pre><code data-trim class="python">
+					git branch &lt;name of the branch&gt; #But then create e new branch!
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout &lt;name of the branch&gt; #Go to the new branch!
+					</code></pre>
+					<pre><code data-trim class="python">
+					... #Do your modifications
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout -f master &lt;name of the branch&gt; #Update master
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout master  #Go to master
+					</code></pre>
+					<pre><code data-trim class="python">
+					git branch -d &lt;name of the branch&gt; #Delete that branch if not needed
+					</code></pre>
+					<p class="source">Source: <a href="http://stackoverflow.com/questions/5772192/git-how-can-i-reconcile-detached-head-with-master-origin">http://stackoverflow.com/questions/5772192/git-how-can-i-reconcile-detached-head-with-master-origin</a>
+				</section>	
+
 				
 				<section>
 					<h2>Exercise: 06</h2>
@@ -160,6 +191,11 @@
 					<img src="images/gitflow-workflow.jpg">
 					</a>
 					<p class="source"><a href="https://www.atlassian.com/git/workflows#!workflow-gitflow">https://www.atlassian.com/git/workflows#!workflow-gitflow</a></p>
+				</section>
+				
+				<section>
+					<h3>Lunch time! Questions?</h3>
+					<h3>See you at 13:00</h3>
 				</section>
 
 
@@ -318,17 +354,11 @@
 					<img src="images/helsinki-poster.jpg">
 				</section>	
 				
-				
-				<section>
-					<h3>Lunch time! Questions?</h3>
-					<h3>See you at 13:00</h3>
-				</section>
-				
 				<section>
 					<h2>Open Meta-design: how to do it</h2>
 					<ol>
 						<li>analyse the community / local context</li>
-						<li>identify the (design) process</li>
+						<li>identify the (design+manufacturing+distribution...) process</li>
 						<li>identify the activities in the process</li>
 						<li>identify a timeline of the activities</li>
 						<li>identify flows between activities</li>
