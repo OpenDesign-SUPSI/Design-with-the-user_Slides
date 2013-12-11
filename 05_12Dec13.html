@@ -59,24 +59,20 @@
 					git checkout master #Go back to master branch
 					</code></pre>
 					<pre><code data-trim class="python">
+					git checkout &lt;sha&gt; &lt;filename&gt; #Get a file from a specific commit
+					</code></pre>
+					<pre><code data-trim class="python">
 					git reset --hard &lt;sha&gt; #Replace working dir with a specific commit
 					</code></pre>
 					<pre><code data-trim class="python">
 					git checkout &lt;sha&gt; #Go back in time at a specific commit
 					</code></pre>
-					<pre><code data-trim class="python">
-					git branch &lt;name of the branch&gt; #But then create e new branch!
-					</code></pre>
-					<pre><code data-trim class="python">
-					git checkout &lt;sha&gt; &lt;filename&gt; #Get a file from a specific commit
-					</code></pre>
+					<p>But this need a specific workflow ...</p>
+					
 				</section>	
 				
 								<section>
 					<h2>Git: Checkout & Detached Head</h2>
-					<pre><code data-trim class="python">
-					git checkout &lt;sha&gt; &lt;filename&gt; #Get a file from a specific commit
-					</code></pre>
 					<pre><code data-trim class="python">
 					git checkout &lt;sha&gt; #Go back in time at a specific commit
 					</code></pre>
@@ -117,10 +113,10 @@
   					Automatic merge failed; fix conflicts and then commit the result.
 					</code></pre>
 					<pre><code data-trim class="python">
-					git checkout --theirs &lt;filename&gt; #Keep their/remote file
+					git checkout --theirs &lt;filename&gt; #Keep their/new/merging/remote file
 					</code></pre>
 					<pre><code data-trim class="python">
-					git checkout --ours &lt;filename&gt; #Keep my/local file
+					git checkout --ours &lt;filename&gt; #Keep my/original/merged/local file
 					</code></pre>
 					<pre><code data-trim class="python">
 					git add &lt;filename&gt; #After checkout, don't forget to add
