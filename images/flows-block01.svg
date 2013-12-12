@@ -1684,7 +1684,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1807,67 +1807,6 @@
          x="388.13141"
          id="tspan6689"
          sodipodi:role="line">money flow</tspan></text>
-    <rect
-       y="421.10309"
-       x="230.28275"
-       height="26.61935"
-       width="114.11979"
-       id="rect6710"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.37639618;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
-    <g
-       id="g6788"
-       transform="matrix(0.11413459,0,0,0.11413459,328.49073,428.70602)">
-      <path
-         id="path6772"
-         d="M 50,0 C 22.386,0 0,3.214 0,7.179 v 21.886 c 0,3.964 22.386,7.179 50,7.179 27.612,0 50,-3.215 50,-7.179 V 7.179 C 100,3.214 77.612,0 50,0 z"
-         inkscape:connector-curvature="0" />
-      <g
-         id="g6774">
-        <path
-           id="path6776"
-           d="M 50,46.24 C 22.386,46.24 0,43.025 0,39.061 v 21.885 c 0,3.964 22.386,7.18 50,7.18 27.612,0 50,-3.216 50,-7.18 V 39.061 c 0,3.964 -22.388,7.179 -50,7.179 z"
-           inkscape:connector-curvature="0" />
-      </g>
-      <g
-         id="g6778">
-        <path
-           id="path6780"
-           d="M 50,78.116 C 22.386,78.116 0,74.9 0,70.935 V 92.821 C 0,96.787 22.386,100 50,100 c 27.612,0 50,-3.213 50,-7.179 V 70.936 c 0,3.964 -22.388,7.18 -50,7.18 z"
-           inkscape:connector-curvature="0" />
-      </g>
-    </g>
-    <g
-       id="g6801"
-       transform="translate(108.45477,-98.749816)">
-      <text
-         xml:space="preserve"
-         style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:TitilliumText25L;-inkscape-font-specification:TitilliumText25L"
-         x="126.53753"
-         y="531.33685"
-         id="text6712"
-         sodipodi:linespacing="125%"><tspan
-           y="531.33685"
-           x="126.53753"
-           id="tspan6714"
-           sodipodi:role="line">Repo Name</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text6795"
-         y="540.86829"
-         x="126.53753"
-         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:TitilliumText25L;-inkscape-font-specification:TitilliumText25L"
-         xml:space="preserve"><tspan
-           id="tspan6799"
-           sodipodi:role="line"
-           x="126.53753"
-           y="540.86829">Repository Link</tspan></text>
-    </g>
-    <path
-       sodipodi:nodetypes="cc"
-       inkscape:connector-curvature="0"
-       id="path6807"
-       d="m 328.94627,448.55097 c 35.37884,21.31246 59.9499,87.69265 25.22451,95.83209"
-       style="fill:none;stroke:#000000;stroke-width:1.41732287;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4.25196862, 4.25196862;stroke-dashoffset:0;marker-start:url(#Arrow2Mstart);marker-end:url(#Arrow2Mend)" />
     <g
        transform="matrix(0.62261585,0,0,-0.62261585,-8.0347724,757.9123)"
        inkscape:label="openp2pdesign.org_1.1_english"
@@ -6656,23 +6595,5 @@
            x="261.55087"
            y="575.82104">Activity 03</tspan></text>
     </g>
-    <rect
-       y="490.83795"
-       x="336.02792"
-       height="9.6094246"
-       width="50.665783"
-       id="rect12632"
-       style="fill:#ffffff;fill-opacity:0.78431373;stroke:#000000;stroke-width:0.07868078;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-    <text
-       sodipodi:linespacing="125%"
-       id="text12634"
-       y="497.07227"
-       x="361.31625"
-       style="font-size:6px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:TitilliumText25L;-inkscape-font-specification:TitilliumText25L"
-       xml:space="preserve"><tspan
-         y="497.07227"
-         x="361.31625"
-         id="tspan12636"
-         sodipodi:role="line">information flow</tspan></text>
   </g>
 </svg>
