@@ -15,7 +15,7 @@
    id="svg10067"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="personas-block.svg"
+   sodipodi:docname="activity-block.svg"
    inkscape:export-filename="../02.analysis_personas.png"
    inkscape:export-xdpi="200"
    inkscape:export-ydpi="200">
@@ -240,7 +240,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -309,7 +309,7 @@
            x="84.78051"
            y="159.88777"
            style="font-size:12px" /></flowRegion><flowPara
-         id="flowPara4087"></flowPara></flowRoot>    <flowRoot
+         id="flowPara4087" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4329"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:TitilliumText25L;-inkscape-font-specification:TitilliumText25L;text-anchor:start;text-align:start;writing-mode:lr"><flowRegion
@@ -320,25 +320,25 @@
            x="83.868896"
            y="164.44586"
            style="-inkscape-font-specification:TitilliumText25L;font-family:TitilliumText25L;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%" /></flowRegion><flowPara
-         id="flowPara4343">Subject:</flowPara><flowPara
-         id="flowPara4345">Add a description here ...</flowPara><flowPara
-         id="flowPara4347"></flowPara><flowPara
-         id="flowPara4349">Object:</flowPara><flowPara
-         id="flowPara4351">Add a description here ...</flowPara><flowPara
-         id="flowPara4353"></flowPara><flowPara
-         id="flowPara4355">Outcome:</flowPara><flowPara
-         id="flowPara4357">Add a description here ...</flowPara><flowPara
-         id="flowPara4359"></flowPara><flowPara
-         id="flowPara4361">Mediating Artifacts:</flowPara><flowPara
-         id="flowPara4363">Add a description here ...</flowPara><flowPara
-         id="flowPara4365"></flowPara><flowPara
-         id="flowPara4367">Rules:</flowPara><flowPara
-         id="flowPara4369">Add a description here ...</flowPara><flowPara
-         id="flowPara4371"></flowPara><flowPara
-         id="flowPara4373">Community:</flowPara><flowPara
-         id="flowPara4375">Add a description here ...</flowPara><flowPara
-         id="flowPara4377"></flowPara><flowPara
-         id="flowPara4379">Roles:</flowPara><flowPara
-         id="flowPara4381">Add a description here ...</flowPara><flowPara
-         id="flowPara4383"></flowPara></flowRoot>  </g>
+         id="flowPara3062">(01) Subject:</flowPara><flowPara
+         id="flowPara3064">Add a description here ...</flowPara><flowPara
+         id="flowPara3066"></flowPara><flowPara
+         id="flowPara3068">(02) Object:</flowPara><flowPara
+         id="flowPara3070">Add a description here ...</flowPara><flowPara
+         id="flowPara3072"></flowPara><flowPara
+         id="flowPara3074">(03) Outcome:</flowPara><flowPara
+         id="flowPara3076">Add a description here ...</flowPara><flowPara
+         id="flowPara3078"></flowPara><flowPara
+         id="flowPara3080">(04) Mediating Artifacts:</flowPara><flowPara
+         id="flowPara3082">Add a description here ...</flowPara><flowPara
+         id="flowPara3084"></flowPara><flowPara
+         id="flowPara3086">(05) Rules:</flowPara><flowPara
+         id="flowPara3088">Add a description here ...</flowPara><flowPara
+         id="flowPara3090"></flowPara><flowPara
+         id="flowPara3092">(06) Community:</flowPara><flowPara
+         id="flowPara3094">Add a description here ...</flowPara><flowPara
+         id="flowPara3096"></flowPara><flowPara
+         id="flowPara3098">(07) Roles:</flowPara><flowPara
+         id="flowPara3100">Add a description here ...</flowPara><flowPara
+         id="flowPara3102"></flowPara></flowRoot>  </g>
 </svg>
