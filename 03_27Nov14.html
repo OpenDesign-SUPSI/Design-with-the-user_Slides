@@ -507,6 +507,19 @@
 				</section>
 				
 				<section>
+					<h2>Git: commit history</h2>
+					<a href="http://git-scm.com/book/en/Git-Branching-What-a-Branch-Is">
+					<img src="images/git-commits02.jpg">
+					</a>
+					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
+				</section>
+				
+				<section>
+					<h2>Exercise: 01</h2>
+					<p>Create a local repository, and add + commit your bio file written in Markdown (more info <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">here</a> and <a href="https://help.github.com/articles/github-flavored-markdown">here</a>).</p>
+				</section>
+				
+				<section>
 					<h2>Using Git locally (02): modifications and history</h2>
 					<pre><code data-trim class="python">
 					git rm &lt;file name&gt; #Erase a file within Git
@@ -529,6 +542,11 @@
 					<pre><code data-trim class="python">
 					git ls-tree --name-only &lt;commithash&gt; #All files of a commit
 					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Exercise: 02</h2>
+					<p>Rename your bio file name.surname.md.</p>
 				</section>
 				
 				<section>
@@ -578,19 +596,8 @@
 				</section>
 				
 				<section>
-					<h2>Git: commit history</h2>
-					<a href="http://git-scm.com/book/en/Git-Branching-What-a-Branch-Is">
-					<img src="images/git-commits01.jpg">
-					</a>
-					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
-				</section>
-				
-				<section>
-					<h2>Git: commit history</h2>
-					<a href="http://git-scm.com/book/en/Git-Branching-What-a-Branch-Is">
-					<img src="images/git-commits02.jpg">
-					</a>
-					<p class="source">Source: Chacon, S. (2009). Pro Git. Berkeley, CA; New York: Apress ; Distributed to the Book trade worldwide by Springer-Verlag. Retrieved from <a href="http://git-scm.com/book">http://git-scm.com/book</a></p>
+					<h2>Exercise: 03</h2>
+					<p>Create a repository on GitHub, and add its remote to your local repository, and push your bio.</p>
 				</section>
 				
 				<section>
@@ -645,6 +652,118 @@
 					</code></pre>
 				</section>
 				
+				<section>
+					<h2>Using Git: Diff & Difftool</h2>
+					<pre><code data-trim class="python">
+					git diff #Diff w/ Index / Working Directory
+					</code></pre>
+					<pre><code data-trim class="python">
+					git diff HEAD #Diff w/ HEAD / Working Directory
+					</code></pre>
+					<pre><code data-trim class="python">
+					git diff &lt;sha1&gt; &lt;sha2&gt; #Diff w/ two commits
+					</code></pre>
+					<pre><code data-trim class="python">
+					git difftool &lt;...&gt; #Better diff and for images
+					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Exercise: 04</h2>
+					<p>Create a branch where you will add your hobby to the bio, push it to GitHub.</p><p>Diff(tool) it with the master, merge and push to GitHub.</p>
+				</section>	
+				
+				<section>
+					<h2>Using Git: Tags</h2>
+					<pre><code data-trim class="python">
+					git tag #List existing tags
+					</code></pre>
+					<pre><code data-trim class="python">
+					git tag -a &lt;tagname&gt; -m 'messagetext' #Create a version tag, tagname = v1.0
+					</code></pre>
+					<pre><code data-trim class="python">
+					git push origin &lt;tagname&gt; # Push a tag to the remote repository
+					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Exercise: 05</h2>
+					<p>Create v0.1 and push it to GitHub</p>
+				</section>
+				
+				<section>
+					<h2>Git: Checkout/Reset</h2>
+					<pre><code data-trim class="python">
+					git checkout &lt;name of the branch&gt; #Switch to another branch
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout master #Go back to master branch
+					</code></pre>
+					<pre><code data-trim class="python">
+					git reset --hard &lt;sha&gt; #Replace working dir with a specific commit
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout &lt;sha&gt; #Go back in time at a specific commit
+					</code></pre>
+					<pre><code data-trim class="python">
+					git branch &lt;name of the branch&gt; #But then create e new branch!
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout &lt;sha&gt; &lt;filename&gt; #Get a file from a specific commit
+					</code></pre>
+				</section>	
+				
+				<section>
+					<h2>Git: Checkout & Detached Head</h2>
+					<pre><code data-trim class="python">
+					git checkout &lt;sha&gt; #Go back in time at a specific commit
+					</code></pre>
+					<p>You will get a Detached Head, so...</p>
+					<pre><code data-trim class="python">
+					git branch &lt;name of the branch&gt; #But then create e new branch!
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout &lt;name of the branch&gt; #Go to the new branch!
+					</code></pre>
+					<pre><code data-trim class="python">
+					... #Do your modifications
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout master  #Go to master
+					</code></pre>
+					<pre><code data-trim class="python">
+					git merge &lt;name of the branch&gt; #Update master with the branch you created
+					</code></pre>
+					<pre><code data-trim class="python">
+					git branch -d &lt;name of the branch&gt; #Delete that branch if not needed
+					</code></pre>
+					<p class="source">Source: <a href="http://stackoverflow.com/questions/5772192/git-how-can-i-reconcile-detached-head-with-master-origin">http://stackoverflow.com/questions/5772192/git-how-can-i-reconcile-detached-head-with-master-origin</a>
+				</section>	
+				
+				<section>
+					<h2>Exercise: 06</h2>
+					<p>Get from history your first version of the bio, and push it to GitHub.</p>
+				</section>
+				
+				<section>
+					<h2>Using Git: Merge binary files</h2>
+					<pre><code data-trim class="python">
+  					CONFLICT (content): Merge conflict in index.html
+  					</code></pre>
+  					<pre><code data-trim class="python">
+  					Automatic merge failed; fix conflicts and then commit the result.
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout --theirs &lt;filename&gt; #Keep their/remote file
+					</code></pre>
+					<pre><code data-trim class="python">
+					git checkout --ours &lt;filename&gt; #Keep my/local file
+					</code></pre>
+					<pre><code data-trim class="python">
+					git add &lt;filename&gt; #After checkout, don't forget to add
+					</code></pre>
+					<p class="source">Source: <a href="http://gitready.com/advanced/2009/02/25/keep-either-file-in-merge-conflicts.html">http://gitready.com/advanced/2009/02/25/keep-either-file-in-merge-conflicts.html</a></p>
+				</section>
 				
 
 
