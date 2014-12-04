@@ -684,6 +684,29 @@
 				</section>
 				
 				<section>
+					<h2>Git: Fetch</h2>
+					<pre><code data-trim class="python">
+					git fetch &lt;name of the remote&gt; #Fetch a remote repo
+					</code></pre>
+					<p>And then compare it (it is a local "remote" branch for example origin/master) (see <a href="http://stackoverflow.com/a/1331459">http://stackoverflow.com/a/1331459</a></p>
+					<pre><code data-trim class="python">
+					git diff --stat &lt;name of the branch&gt; &lt;name of the fetched branch&gt;
+					</code></pre>
+					<p>For example:</p>
+					<pre><code data-trim class="python">
+					git diff --stat master origin/master
+					</code></pre>
+					<p>Do your diff/modifications and then merge (while in your master or where you want to merge)</p>
+					<pre><code data-trim class="python">
+					git merge &lt;name of the fetched branch&gt;
+					</code></pre>
+					<p>For example:</p>
+					<pre><code data-trim class="python">
+					git merge origin/master
+					</code></pre>
+				</section>	
+				
+				<section>
 					<h2>Git: Checkout/Reset</h2>
 					<pre><code data-trim class="python">
 					git checkout &lt;name of the branch&gt; #Switch to another branch
@@ -738,13 +761,17 @@
 				</section>
 				
 				<section>
-					<h2>Using Git: Merge binary files</h2>
+					<h2>Using Git: Merge files</h2>
+					<p>Whenever merge fails...you need to merge manually</p>
 					<pre><code data-trim class="python">
   					CONFLICT (content): Merge conflict in index.html
-  					</code></pre>
-  					<pre><code data-trim class="python">
   					Automatic merge failed; fix conflicts and then commit the result.
 					</code></pre>
+					<p>For text files:</p>
+					<pre><code data-trim class="python">
+					git mergetool
+					</code></pre>
+					<p>For binary/other files:</p>
 					<pre><code data-trim class="python">
 					git checkout --theirs &lt;filename&gt; #Keep their/remote file
 					</code></pre>
@@ -753,6 +780,10 @@
 					</code></pre>
 					<pre><code data-trim class="python">
 					git add &lt;filename&gt; #After checkout, don't forget to add
+					</code></pre>
+					<p>And then commit!</p>
+					<pre><code data-trim class="python">
+					git commit -m "..."
 					</code></pre>
 					<p class="source">Source: <a href="http://gitready.com/advanced/2009/02/25/keep-either-file-in-merge-conflicts.html">http://gitready.com/advanced/2009/02/25/keep-either-file-in-merge-conflicts.html</a></p>
 				</section>
