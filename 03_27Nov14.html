@@ -733,9 +733,13 @@
 					<pre><code data-trim class="python">
 					git checkout &lt;sha&gt; #Go back in time at a specific commit
 					</code></pre>
-					<p>You will get a Detached Head, so...</p>
+					<p>You will get a Detached Head, so... you can go back to master and that's al</p>
 					<pre><code data-trim class="python">
-					git branch &lt;name of the branch&gt; #But then create e new branch!
+					git checkout master  #Go back to master and fix the detached head
+					</code></pre>
+					<p>...or you do your work/modifications in this way:</p>
+					<pre><code data-trim class="python">
+					git branch &lt;name of the branch&gt; #But then create e new branch from this point in time
 					</code></pre>
 					<pre><code data-trim class="python">
 					git checkout &lt;name of the branch&gt; #Go to the new branch!
@@ -767,7 +771,7 @@
   					CONFLICT (content): Merge conflict in index.html
   					Automatic merge failed; fix conflicts and then commit the result.
 					</code></pre>
-					<p>For text files:</p>
+					<p>For text files: manually or</p>
 					<pre><code data-trim class="python">
 					git mergetool
 					</code></pre>
@@ -778,10 +782,10 @@
 					<pre><code data-trim class="python">
 					git checkout --ours &lt;filename&gt; #Keep my/local file
 					</code></pre>
+					<p>And then add + commit!</p>
 					<pre><code data-trim class="python">
-					git add &lt;filename&gt; #After checkout, don't forget to add
+					git add &lt;filename&gt; #Add the solved/merged file(s)
 					</code></pre>
-					<p>And then commit!</p>
 					<pre><code data-trim class="python">
 					git commit -m "..."
 					</code></pre>
